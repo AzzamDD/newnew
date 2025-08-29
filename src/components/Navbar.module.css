@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4a90e2;
+  animation: fadeSlide 1.5s ease forwards;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #4a90e2;
+  transition: width 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #4a90e2;
+}
+
+.menu li a:hover::after {
+  width: 100%;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}

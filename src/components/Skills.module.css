@@ -1,0 +1,37 @@
+.skills {
+  background: #f5f5f5;
+  padding: 60px 20px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.skills.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skillList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skillItem {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.skillItem:hover {
+  transform: scale(1.2) rotate(-3deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border-color: #4a90e2;
+  color: #4a90e2;
+}

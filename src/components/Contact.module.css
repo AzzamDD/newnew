@@ -1,0 +1,17 @@
+.contact {
+  background: #fff;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.contact.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact a {
+  color: #4a90e2;
+  text-decoration: none;
+}
